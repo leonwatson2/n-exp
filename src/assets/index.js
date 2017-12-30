@@ -1,7 +1,5 @@
 $(()=>{
 	$("#vip").hover(function(){
-
-
 		changeWidth(100,100,100)
 	}, ()=>{
 		changeWidth(0,0,0)

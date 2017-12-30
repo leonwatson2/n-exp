@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "ng": "ng",
-    "start": "node index.js"
+    "style:w": "node-sass -w src/assets/style.sass src/assets/*",
+    "start": "node index.js & npm run style:w"
   },
   "private": true,
   "dependencies": {
