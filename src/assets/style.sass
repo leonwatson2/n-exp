@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700)
+
+$blueLight: #7DD0ED
+$blueDark: #27A6D2
+$titleColor: #FFF
+$textColor: #5E5E5E
+$transition: all .3s ease-in-out
+$backgroundColor: #E9EDEF
+
+
+.frame
+	font-family: 'Open Sans'
+	background: $backgroundColor
+	width: 400px
+	height: 400px
+	max-width: 100%
+	display: flex
+	justify-content: space-around
+	flex-direction:column
+
+
+
+.plans
+	margin: 20px 25px
+	display: flex
+	justify-content: space-between
+
+
+.plan
+	background:white
+	width: 32.4%
+	text-align: center
+	box-shadow: 1px 1px 10px gray
+	.title
+		font-weight: bold
+		height: 30px
+		padding: 5px 15px
+		background: $blueLight
+		color: $titleColor
+	
+	transform: scale(1)
+
+	transition: transform .35s ease-out
+
+	.price
+		font-size: 2em
+		padding: 10px
+		span
+			font-size: .5em
+			display: block
+		
+	
+
+	&:hover
+		transform: scale(1.3)
+		z-index: 3
+		.title
+			background: $blueDark
+		
+		.price
+			color: $blueLight
+
+		
+	
+
+
+
+.datas
+	margin: 10px 15px
+	background: white
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	box-shadow: 1px 1px 10px gray
+
+
+.data
+	display: flex
+	flex-direction: column
+	margin: 10px 5px
+	width: 95%
+	.text	
+		margin-bottom: 5px
+		width: 100%
+		.left
+			float: left
+		
+		.right
+			float: right
+		
+	
+
+
+
+
+
+.line
+	width: 100%
+	height: 10px
+	background: $backgroundColor
+	border-radius: 40px
+
+	.fill
+		height: 100%
+		width: 0%
+		background: $blueLight
+		border-radius: 40px
+		transition:width .35s ease-out
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
